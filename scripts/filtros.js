@@ -29,7 +29,7 @@ function filtroValorInput(){
     const input = document.querySelector(".filtroValor")
     const pValor = document.querySelector(".valorInput")
 
-    input.addEventListener("mousemove", ()=>{
+    input.addEventListener("click", ()=>{
         pValor.innerText = `Até R$ ${Number(input.value).toFixed(2)}`
         const arrayFiltro = products.filter(produto =>{
             if(produto.price < input.value){
