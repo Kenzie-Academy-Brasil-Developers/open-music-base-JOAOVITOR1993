@@ -1,1 +1,130 @@
-/* Desenvolva sua estilização aqui ... */
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4.813rem;
+}
+
+header div h1{
+    font-size: var(--font-1);
+    font-weight: var(--font-weight-1);
+    color: var(--color-grey-0);
+}
+
+.genero{
+    margin-top: 4.06rem;
+    margin-bottom: 4.06rem;
+}
+
+.texto1{
+    font-size: var(--font-2);
+    font-weight: var(--font-weight-1);
+    color: var(--color-grey-0);
+}
+
+.texto2{
+    font-size: var(--font-3);
+    font-weight: var(--font-weight-1);
+    color: var(--color-grey-0);
+}
+
+.texto3{
+    font-size: var( --font-4);
+    font-weight: var(--font-weight-2);
+    color: var(--color-grey-0);
+}
+
+.genero ul{
+    display: flex;
+    gap: 1.87rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.filtro div{
+    display: flex;
+    justify-content: space-between;
+}
+
+[type=range]{
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline-block;
+    outline: none;
+    margin-top: 2rem;
+    width: 100%;
+    height: 0.7rem;
+    border-radius: 1rem;
+    background-color: var(--color-brand-1);
+    cursor: pointer;
+}
+
+[type=range]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    border: 0.5rem solid var(--color-brand-1);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: var(--color-grey-8);   
+} 
+
+.albuns{
+    margin-top: 3.75rem;
+}
+
+.albuns ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 3.75rem;
+}
+
+.albuns ul li{
+   max-width: 48%;
+   max-height: 16.18;
+   margin-bottom: 2.37rem;
+   border-radius: var(--radius-1);
+   background-color: var(--color-grey-8); 
+   transition: 0.5s;
+}
+
+.albuns ul li:hover{
+    background-color: var(--color-grey-5);
+    transition: 0.5s; 
+ }
+
+.albuns ul li figure{
+    width: 100%;
+    height: 7.06rem;
+    border-radius: var(--radius-1) var(--radius-1) 0 0;
+    overflow:hidden;
+}
+
+.albuns ul li img{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.albuns ul li img:hover{  
+    transform: scale(1.2);
+    transition: 0.5s; 
+}
+
+.conteudoCard{
+    padding: 1rem;
+}
+
+.conteudoCard div:nth-child(1){
+    display: flex;
+    gap: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+.conteudoCard div:nth-child(3){
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.71rem;
+}
+
+
+
+

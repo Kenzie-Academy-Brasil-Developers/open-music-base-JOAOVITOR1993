@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/globalStyles.css" />
+    <link rel="stylesheet" href="./styles/buttons.css" />
+    <link rel="stylesheet" href="./pages/home/index.css">
+    <title>Open Music</title>
+  </head>
+  <body>
+    <main>
+      <header class="container">
+        <div>
+          <h1>open music</h1>
+          <button id="darkMode"class="botao botaoCinza">
+            <img id="imgDark"src="./assets/img/moon.png" alt="">
+          </button>
+        </div>
+      </header>
+      <section class="genero container">
+        <h2 class="texto1">Gênero Musical</h2>
+        <ul>
+          <li><button id="categorias" class="botao botaoCinza">Todos</button></li>
+          <li><button id="categorias" class="botao botaoCinza">Pop</button></li>
+          <li><button id="categorias" class="botao botaoCinza">MPB</button></li>
+          <li><button id="categorias" class="botao botaoCinza">Forró</button></li>
+          <li><button id="categorias" class="botao botaoCinza">Samba</button></li>
+          <li><button id="categorias" class="botao botaoCinza">Baião</button></li>
+          <li><button id="categorias" class="botao botaoCinza">Rap</button></li>
+          <li><button id="categorias" class="botao botaoCinza">Hip-Hop</button></li>
+          <li><button id="categorias" class="botao botaoCinza">Rock</button></li>
+          <li><button id="categorias" class="botao botaoCinza">Reggae</button></li>
+          <li><button id="categorias" class="botao botaoCinza">Country</button></li>
+          <li><button id="categorias" class="botao botaoCinza">Gospel</button></li>
+        </ul>
+      </section>
+      <section class="filtro container">
+        <div>
+          <label for="valor"><h2 class="texto1">Definir preço</h2></label>
+          <p class="valorInput texto1">Até R$ 240.00</p>
+        </div>
+        <input type="range" class="filtroValor" name="valor" min="0" max="240" step="0.5">
+      </section>
+      <section class="albuns container">
+        <h2 class="texto1">Albuns Encontrados</h2>
+        <ul class="ulAlbuns"></ul>
+      </section>
+    </main>
+    <script src="./pages/home/productsData.js"></script>
+    <script src="./pages/home/index.js"></script>
+    <script src="./scripts/filtros.js"></script>
+    <script src="./scripts/darkmode.js"></script>
+  </body>
+</html>
